@@ -25,13 +25,13 @@ class Song
 
 #Here we are defining a class method, .artists
   def self.artists
-    @@artists
+    @@artists.uniq!
   end
 
 #Here we are defining a class method, .genres
   def self.genres
-    @@genres
-  end 
+    @@genres.uniq!
+  end
 
   #def initialize #(can we use initialize more than once in our class?) - no, ended up failing the taking in three arguments test
   # def
