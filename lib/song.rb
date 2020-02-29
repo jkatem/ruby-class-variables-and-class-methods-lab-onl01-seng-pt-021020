@@ -33,21 +33,13 @@ class Song
     @@genres.uniq!
   end
 
-  #def initialize #(can we use initialize more than once in our class?) - no, ended up failing the taking in three arguments test
-  # def
-  #   @@count += 1
-  # end
-
-
-  # def name
-  #   @name = name
-  # end
-  #
-  # def artist
-  #   @artist = artist
-  # end
-  #
-  # def genre
-  #   @genre = genre
-  # end
+  def self.genre_count
+    genre_count = {}
+    @@genres.each do |genre|
+      if genre_count[genre]
+        genre_count[genre] += 1
+      else
+        genre_count[genre] = 1
+      end
+  end 
 end
