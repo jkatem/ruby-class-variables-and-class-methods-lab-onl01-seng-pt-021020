@@ -9,23 +9,17 @@ class Song
 
 #create class variables
   @@count = 0
-  @@artists
-  @@genres
+  @@artists = []
+  @@genres = []
 
-def class
-  @@count += 1
-end
 
-def self.count
-  @@count
-end
 
   #def initialize #(can we use initialize more than once in our class?) - no, ended up failing the taking in three arguments test
   # def
   #   @@count += 1
   # end
 
-  
+
   # def name
   #   @name = name
   # end
