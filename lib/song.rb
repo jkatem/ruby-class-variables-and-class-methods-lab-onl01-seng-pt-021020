@@ -21,7 +21,12 @@ class Song
   def self.count
     #return number of songs created
     @@count
-  end 
+  end
+
+#Here we are defining a class method, .artists
+  def self.artists
+    @@artists 
+  end
 
   #def initialize #(can we use initialize more than once in our class?) - no, ended up failing the taking in three arguments test
   # def
